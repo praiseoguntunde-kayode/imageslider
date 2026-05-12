@@ -1,14 +1,14 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landingpage from "./Landingpage";
-import Navlinks from "./Navlinks";
-import Chat from "./Chat";
-import Socialmedia from "./Socialmedia";
+import React, { useEffect } from "react";
+import UseEffect1 from "../UsingUseEffect/UseEffect1";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About Us Page";
+  }, []);
   return (
     <div>
       <h3>Get to know more about us?</h3>
+      <UseEffect1 />
     </div>
   );
 };

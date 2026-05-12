@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./Landingpage";
-import Navlinks from "./Navlinks";
-import Chat from "./Chat";
-import About from "./About";
+import React, { useEffect } from "react";
 import ImageSlider from "../statemanagement/Imageslider";
+import UseEffect1 from "../UsingUseEffect/UseEffect1";
 
 const Socialmedia = () => {
+  useEffect(() => {
+    document.title = "Social Media Page";
+  }, []);
   return (
     <div>
       <h3>Social Media Page</h3>
